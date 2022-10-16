@@ -21,7 +21,7 @@ nav{
 }
 #nav_links{
     display: flex;
-    font-size: calc(2vw + 1vh);
+    font-size: calc(1.5vw + 1.5vh);
     justify-content: end;
     margin-right: calc(.5vw + .5vh);
     /* background-color: red; */
