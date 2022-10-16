@@ -15,15 +15,15 @@ nav{
     top: 0px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
     width: 100%;
-    padding: calc(.5vh + .1vw);
+    padding: calc(.1vh + .1vw);
     background-color: white;
     
 }
 #nav_links{
     display: flex;
-    font-size: calc(1.5vw + 1.5vh);
+    font-size: calc(1vw + 1.2vh);
     justify-content: end;
-    margin-right: calc(.5vw + .5vh);
+    margin-right: calc(.2vw + .2vh);
     /* background-color: red; */
     
  }
