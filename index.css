@@ -72,41 +72,64 @@ nav{
     margin-top: calc(1vh + 1vw);
     
  }
- #about_me h1, #about_me h3{
+ #home h2{
+    text-align: center;
+    font-size: 30px;
+ }
+ #home h3{
     text-align: center;
  }
- #about_me h1 span{
+ #home h1 span, #home h3 span{
     color: red;
+ }
+ .wel{
+    font-size: 70px;
  }
 
  #about_me>div {
     display: grid;
     grid-template-columns: 2fr 3fr;
+    margin: auto;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
  }
  #about_me>div>div:first-child {
     margin: auto;
    /* border: 1px solid red; */
+  
  }
  #about_me div img{
     width: calc(14vw + 8vh);
     border-radius: 50%;
+    /* border: 1px solid red; */
  }
- 
+ #abco{
+    display: grid;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-items: center; */
+    /* border: 1px solid red; */
+ }
  #about_content{
     line-height: 30px;
     font-size: calc(1vh + 2 wh);
     padding: 5px;
-    /* border: 1px solid red; */
+    
+   
  }
  #about_content div{
+    display: grid;
     margin: 5px 0px;
     width: 100%;
+    
    
  }
  #about_content div  div{
     text-align: center;
     width: 100%;
-    transition: all 1s ease;
+    transition: background-color 1s ease;
    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
    
 
@@ -117,7 +140,7 @@ nav{
 
  }
 
- #skills, #contact{
+ #skills, #contact, #projects{
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -134,12 +157,36 @@ nav{
     width: 200px;
     height: 200px;
  }
- #projects{
-    height: 400px;
- }
+
  #contact{
     margin-bottom: 80px;
  }
+
+
+ #projects>div{
+    padding: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+ }
+ 
+ #projects>div>div:last-child{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    padding: 5px;
+    transition: background-color 1s ease;
+ }
+ #projects>div>div:last-child div{
+    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+    width: 110px;
+    padding: 10px 0px;
+ }
+ #projects>div>div a:hover{
+    background-color: rgb(216, 216, 233);
+
+ }
+ 
 
 @media screen and  (max-width:768px) {
     #nav_links{
