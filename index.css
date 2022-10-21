@@ -141,11 +141,11 @@ nav{
  }
 
  #skills, #contact, #projects{
-    margin: 20px;
+    margin: 20px 0px;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 2px;
+    /* box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 2px; */
     justify-content: center;
  }
  #skills div, #contact div{
@@ -164,8 +164,8 @@ nav{
 
 
  #projects>div{
-    padding: 10px;
-    width: 350px;
+    padding: 5px;
+    /* width: 350px; */
     text-align: center;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
  }
@@ -234,5 +234,20 @@ nav{
         text-align: center;
     }
     
-    
+   
+     #projects>div>div:last-child div{
+        box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+        width: calc(11vw + 11vh);
+        padding: 10px 0px;
+        font-size: calc(1vw + 2vh);
+     }
+     .wel{
+        font-size: calc(10vw + 9vh);
+     }
+     #greeting, #menu_label{
+        font-size: calc(2vw + 2vh);
+        display: grid;
+        align-items: center;
+    }
+     
 } 
