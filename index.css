@@ -30,10 +30,13 @@ nav{
     background-color: white;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 #greeting{
-    margin: calc(.5vw + .5vh);
+    margin-left: calc(.5vw + .5vh);
+    display: grid;
+    align-items: center;
 }
 #greeting h1 span{
     color: red;
@@ -43,6 +46,7 @@ nav{
     font-size: calc(1vw + 1.2vh);
     justify-content: end;
     margin-right: calc(.2vw + .2vh);
+    align-items: center;
  }
  #nav_links a{
     margin: calc(.5vw + .5vh);
@@ -144,13 +148,13 @@ nav{
     justify-content: center;
  }
  #skills div, #contact div{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 1px;
  }
  #skills div img, #contact div img{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
  }
 
  #contact{
