@@ -2,54 +2,171 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+ 
 }
 a{
     text-decoration: none;
     color: blue;
 }
+h1{
+    text-align: center;
+}
+a:hover{
+    color: red;
+}
 .menu{
     display: none;
 }
+body{
+    overflow: hidden;
+}
 nav{
-    position: fixed;
-    top: 0px;
+    position: sticky;
+    top: 0mm;
+    z-index: 30;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
     width: 100%;
     padding: calc(.1vh + .1vw);
     background-color: white;
+    display: flex;
+    justify-content: space-between;
     
 }
+#greeting{
+    margin: calc(.5vw + .5vh);
+}
+#greeting h1 span{
+    color: red;
+ }
 #nav_links{
     display: flex;
     font-size: calc(1vw + 1.2vh);
     justify-content: end;
     margin-right: calc(.2vw + .2vh);
-    /* background-color: red; */
-    
  }
  #nav_links a{
     margin: calc(.5vw + .5vh);
  }
- #nav_links a:hover{
-    color: rgb(46, 46, 110);
+ 
+ #contents{
+    position: fixed;
+    padding-top: 10px;
+    overflow-y: scroll;
+    scroll-snap-type: none;
+    height: 100%;
+    border: 1 px red solid;
  }
+#contents::-webkit-scrollbar {
+    width: 0px;
+  }
+ 
  #home{
-    margin-top: calc(3vh + 4vw ) ;
+    /* height: calc(3vh + 4vw ); */
+ }
+ #about_me{
+   
+    
+ }
+ #about_me>div{
+    /* border: 1px solid red; */
+    margin-top: calc(1vh + 1vw);
+    
+ }
+ #about_me h1, #about_me h3{
+    text-align: center;
+ }
+ #about_me h1 span{
+    color: red;
  }
 
-@media screen and (min-width: 481px ) and (max-width:768px) {
+ #about_me>div {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+ }
+ #about_me>div>div:first-child {
+    margin: auto;
+   /* border: 1px solid red; */
+ }
+ #about_me div img{
+    width: calc(14vw + 8vh);
+    border-radius: 50%;
+ }
+ 
+ #about_content{
+    line-height: 30px;
+    font-size: calc(1vh + 2 wh);
+    padding: 5px;
+    /* border: 1px solid red; */
+ }
+ #about_content div{
+    margin: 5px 0px;
+    width: 100%;
+   
+ }
+ #about_content div  div{
+    text-align: center;
+    width: 100%;
+    transition: all 1s ease;
+   box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+   
+
+ }
+ #about_content div  div:hover{
+    
+   background-color: rgb(216, 216, 233);
+
+ }
+
+ #skills, #contact{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 2px;
+    justify-content: center;
+ }
+ #skills div, #contact div{
+    width: 200px;
+    height: 200px;
+    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 1px;
+ }
+ #skills div img, #contact div img{
+    width: 200px;
+    height: 200px;
+ }
+ #projects{
+    height: 400px;
+ }
+ #contact{
+    margin-bottom: 80px;
+ }
+
+@media screen and  (max-width:768px) {
     #nav_links{
         font-size: calc(2vw + 1.5vh);
+     }
+     #about_me>div{
+        display: flex;
+        flex-wrap: wrap;
      }
 }
 
 @media screen  and (max-width:480px) {
+    nav{
+        display: grid;
+        grid-template:'. .'
+        'links links';
+    }
+    #nav_links{
+        grid-area: links;
+    }
     #menu_label{
-        display: block;
+        display: grid;
+        margin: calc(.5vw + .5vh);
         box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px; 
         /* width: calc(15vw + 1vh); */
         text-align: center;
-        padding: calc(1vh);
+        padding: calc(1vh + .5vw);
         font-size: calc(5vh);
         font-weight: bold;
         box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
@@ -69,8 +186,6 @@ nav{
         padding: calc(1vh);
         text-align: center;
     }
-    #home{
-        margin-top: calc(5vh + 6vw ) ;
-    }
+    
     
 } 
