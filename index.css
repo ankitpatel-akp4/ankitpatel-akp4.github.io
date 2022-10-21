@@ -60,13 +60,7 @@ nav{
     width: 0px;
   }
  
- #home{
-    /* height: calc(3vh + 4vw ); */
- }
- #about_me{
-   
-    
- }
+ 
  #about_me>div{
     /* border: 1px solid red; */
     margin-top: calc(1vh + 1vw);
@@ -217,6 +211,7 @@ nav{
         font-size: calc(5vh);
         font-weight: bold;
         box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+        align-items: center;
     }
     #nav .nav_links_visible{
         display: none;
