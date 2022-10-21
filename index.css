@@ -110,6 +110,7 @@ nav{
     line-height: 30px;
     font-size: calc(1vh + 2 wh);
     padding: 5px;
+    text-align: center;
     
    
  }
