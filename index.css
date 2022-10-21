@@ -237,15 +237,15 @@ nav{
    
      #projects>div>div:last-child div{
         box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
-        width: calc(11vw + 11vh);
-        padding: 10px 0px;
-        font-size: calc(1vw + 2vh);
+        width: calc(25vw + 2vh);
+        padding: 5px 0px;
+        font-size: calc(2vw + 1vh);
      }
      .wel{
-        font-size: calc(8vw + 8vh);
+        font-size: calc(8vw + 3vh);
      }
      #greeting, #menu_label{
-        font-size: calc(2vw + 2vh);
+        font-size: calc(2vw + 1vh);
         display: grid;
         align-items: center;
     }
