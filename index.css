@@ -164,9 +164,24 @@ nav{
 
  #projects>div{
     padding: 5px;
+    width: 350px;
+    text-align: center;
+    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+ }
+ #projects>div img{
+    width: 100%;
+ }
+ #projects>div >div:nth-child(2)>im{
+    padding: 5px;
     /* width: 350px; */
     text-align: center;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+ }
+ #tech_pro{
+   text-align: left;
+ }
+ #tech_pro> hr{
+   margin: 10px 0px;
  }
  
  #projects>div>div:last-child{
@@ -249,5 +264,11 @@ nav{
         display: grid;
         align-items: center;
     }
+    #projects>div{
+      padding: 5px;
+      width: 100%;
+      text-align: center;
+      box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+   }
      
 } 
