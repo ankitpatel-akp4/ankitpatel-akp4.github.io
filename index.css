@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(206, 206, 241); */
  
 }
 a{
@@ -18,6 +19,7 @@ a:hover{
     display: none;
 }
 body{
+   /* background-color: rgb(206, 206, 241); */
     overflow: hidden;
 }
 nav{
@@ -139,7 +141,7 @@ nav{
 
  }
 
- #skills, #contact, #projects{
+ #skills, #contact{
     margin: 20px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -160,12 +162,25 @@ nav{
  #contact{
     margin-bottom: 80px;
  }
+#projects{
+   margin: 20px 0px;
+   display: flex;
+   flex-wrap: wrap;
+   /* font-size: calc(1vw + 1vh); */
+   /* box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 2px; */
+   justify-content: space-evenly;
+}
+#projects>div:hover{
 
+   background-color: rgba(227, 226, 235, 0.384);
+}
 
  #projects>div{
     padding: 5px;
     width: 350px;
+    
     text-align: center;
+
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
  }
  #projects>div img{
