@@ -149,6 +149,29 @@ nav{
     /* box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 2px; */
     justify-content: center;
  }
+ #github{
+   margin: 20px;
+   /* border: 1px red solid;
+   height: 500px; */
+ }
+ #github .calendar{
+   
+ }
+ #github img{
+   
+   width: 100%;
+}
+#stats{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin: 20px 0px;
+}
+#stats> div{
+   width: 400px;
+   /* height: 300px; */
+}
+
  #skills div, #contact div{
     width: 100px;
     height: 100px;
@@ -225,9 +248,28 @@ nav{
         display: flex;
         flex-wrap: wrap;
      }
+     #github{
+      font-size: calc(2vw + 1vh);
+      justify-content: center;
+     
+    }
+    #github img{
+      
+      width: 100%;
+   }
+   #stats{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   #stats> div{
+      width: calc(70vw);
+      /* height: 300px; */
+   }
 }
 
 @media screen  and (max-width:680px) {
+   
     nav{
         display: grid;
         grid-template:'. .'
@@ -265,6 +307,7 @@ nav{
     }
     
    
+   
      #projects>div>div:last-child div{
         box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
         width: calc(25vw + 2vh);
@@ -279,6 +322,7 @@ nav{
         display: grid;
         align-items: center;
     }
+    
     #projects>div{
       padding: 5px;
       width: 100%;
