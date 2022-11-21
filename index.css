@@ -103,6 +103,7 @@ nav{
  #about_me div img{
     width: calc(14vw + 8vh);
     border-radius: 50%;
+    padding: 10px 0px;
     /* border: 1px solid red; */
  }
  #abco{
@@ -187,6 +188,7 @@ nav{
  }
 #projects{
    margin: 20px 0px;
+
    display: flex;
    flex-wrap: wrap;
    /* font-size: calc(1vw + 1vh); */
@@ -199,9 +201,9 @@ nav{
 }
 
  #projects>div{
-    padding: 5px;
+    padding: 15px;
     width: 350px;
-    
+    line-height: 25px;
     text-align: center;
 
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
