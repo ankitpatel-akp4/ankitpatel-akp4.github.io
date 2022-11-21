@@ -211,7 +211,7 @@ nav{
  #projects>div img{
     width: 100%;
  }
- #projects>div >div:nth-child(2)>im{
+ #projects>div >div:nth-child(2)>img{
     padding: 5px;
     /* width: 350px; */
     text-align: center;
