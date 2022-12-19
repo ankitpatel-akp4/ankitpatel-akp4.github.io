@@ -206,21 +206,43 @@ nav{
     margin: 20px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 1px;
  }
- #contact div{
+ 
+ #icon_contact {
+   display: flex;
+   margin: auto;
+   justify-content: center;
+   gap: 30px;
    width: 50px;
    height: 50px;
    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 1px;
 }
+
+#contact >div{
+   display: grid;
+   line-height: 40px;
+   font-size: 25px;
+   margin: auto;
+   /* border: 1px red solid; */
+   width: 80%;
+   justify-content: space-evenly;
+   /* align-items: center;
+   text-align: center; */
+   
+}
+#contact div>div a{
+   color: black;
+}
+
  #skills div img{
     width: 100px;
     height: 100px;
  }
- #contact div img{
+ #icon_contact div img{
    width: 50px;
    height: 50px;
 }
 
- #contact{
+ #icon_contact{
     margin-bottom: 80px;
  }
 #projects{
@@ -245,7 +267,9 @@ nav{
     text-align: center;
    border-radius: 20px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
-    height: 700px;
+    height: 680px;
+    display: grid;
+    align-items: center;
  }
  #projects>div img{
     width: 100%;
@@ -286,6 +310,7 @@ nav{
     background-color: rgb(216, 216, 233);
 
  }
+
  
 
 @media screen and  (max-width:768px) {
