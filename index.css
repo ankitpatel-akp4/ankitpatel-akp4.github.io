@@ -211,20 +211,21 @@ nav{
    display: flex;
    margin: auto;
    justify-content: center;
-   gap: 30px;
+   gap: 10px;
    width: 50px;
    height: 50px;
    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 1px;
 }
 
 #contact >div{
+   text-align: center;
    display: grid;
    line-height: 40px;
-   font-size: 25px;
+   font-size: 23px;
    margin: auto;
    /* border: 1px red solid; */
    width: 80%;
-   justify-content: space-evenly;
+   justify-content: center;
    /* align-items: center;
    text-align: center; */
    
@@ -339,6 +340,9 @@ nav{
       width: calc(70vw);
       /* height: 300px; */
    }
+   #contact >div{
+      font-size: 20px;
+   }
 }
 
 @media screen  and (max-width:680px) {
@@ -402,5 +406,7 @@ nav{
       text-align: center;
       box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
    }
-     
+   #contact >div{
+      font-size: 15px;
+   }
 } 
