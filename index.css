@@ -7,7 +7,7 @@
 }
 a{
     text-decoration: none;
-    color: blue;
+    color: red;
 }
 h1{
     text-align: center;
@@ -90,10 +90,11 @@ nav{
     display: grid;
     grid-template-columns: 2fr 3fr;
     margin: auto;
-    width: 80%;
+    width: 60%;
     margin-top: 30px;
     margin-bottom: 30px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
+    border-radius: 20px;
  }
  #about_me>div>div:first-child {
     margin: auto;
@@ -102,7 +103,7 @@ nav{
  }
  #about_me div img{
     width: calc(14vw + 8vh);
-    border-radius: 50%;
+    border-radius: 60%;
     padding: 10px 0px;
     /* border: 1px solid red; */
  }
@@ -142,16 +143,32 @@ nav{
 
  }
 
- #skills, #contact{
-    margin: 20px 0px;
+ #skills{
+    margin: auto;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    padding: 50px,0px;
+    gap: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
     /* box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 2px; */
     justify-content: center;
+    line-height: 25px;
  }
+ #contact{
+   margin: 20px 0px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px;
+   /* box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 2px; */
+   justify-content: center;
+}
  #github{
-   margin: 20px;
+   margin: auto;
+   width: 80%;
+   padding:20px 0px;
    /* border: 1px red solid;
    height: 500px; */
  }
@@ -186,6 +203,7 @@ nav{
  #skills div{
     width: 150px;
     height: 150px;
+    margin: 20px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 1px;
  }
  #contact div{
@@ -194,8 +212,8 @@ nav{
    box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 2px 1px;
 }
  #skills div img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
  }
  #contact div img{
    width: 50px;
@@ -217,6 +235,7 @@ nav{
 #projects>div:hover{
 
    background-color: rgba(227, 226, 235, 0.384);
+
 }
 
  #projects>div{
@@ -224,13 +243,19 @@ nav{
     width: 350px;
     line-height: 25px;
     text-align: center;
-
+   border-radius: 20px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
  }
  #projects>div img{
     width: 100%;
     height: 200px;
  }
+
+ #projects h1{
+   margin: 8px 0px;
+   
+}
+
  #projects>div >div:nth-child(2)>img{
     padding: 5px;
     /* width: 350px; */
