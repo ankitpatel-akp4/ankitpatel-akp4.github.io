@@ -263,6 +263,7 @@ nav{
 
  #projects>div{
     padding: 15px;
+    margin-bottom: 15px;
     width: 350px;
     line-height: 25px;
     text-align: center;
@@ -402,11 +403,24 @@ nav{
     
     #projects>div{
       padding: 5px;
+      margin-left:10px;
+      margin-right: 10px;
+      height: 700px;
       width: 100%;
+      overflow-y: scroll;
       text-align: center;
+      
       box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
    }
    #contact >div{
       font-size: 15px;
+   }
+   #skills{
+      margin: auto;
+      width: 90%;
+   }
+   #about_me>div {
+      
+      width: 90%;
    }
 } 
