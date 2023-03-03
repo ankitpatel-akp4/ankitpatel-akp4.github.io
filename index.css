@@ -13,7 +13,7 @@ h1{
     text-align: center;
 }
 a:hover{
-    color: red;
+    color: rgb(108, 43, 43);
 }
 .menu{
     display: none;
