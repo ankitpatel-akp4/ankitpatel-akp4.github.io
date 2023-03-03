@@ -269,9 +269,10 @@ nav{
     text-align: center;
    border-radius: 20px;
     box-shadow: rgba(41, 38, 38, 0.2) 0px 2px 8px 4px;
-    height: 680px;
+    height: 800px;
     display: grid;
     align-items: center;
+    justify-content: center;
  }
  #projects>div img{
     width: 100%;
