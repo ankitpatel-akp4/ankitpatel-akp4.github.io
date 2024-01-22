@@ -190,7 +190,7 @@ export const projecstData = [
     {
       title:'REMS',
       desc:'MNREGA(The Mahatma Gandhi National Rural Employment Guarantee Act ) is a scheme by which unskilled people of rural India are guaranteed to have 100 days of paid work. The main objective of this project is to manage employment offered through this scheme.',
-      img:'https://ankitpatel-akp4.github.io/masai_rems.png',
+      img:'/img/mahatma.jpeg',
       features: ['Login/Logout','BDO', 'GPM', 'Attendence'],
       tech: ['Java', 'MySql', 'JDBC', 'DAO-Pattern', 'STS', 'Git'],
       responsibilities:['individual project' ],
@@ -211,7 +211,7 @@ export const projecstData = [
     {
       title:'Online Green Nursery',
       desc:"This is an online Nursery Management Software. In this Application, Admin can add, update, and delete planters, Plants, and seeds. Anyone can see the list of products and after login, they can make an order.",
-      img:'https://ankitpatel-akp4.github.io/onlingGreenNursery.png',
+      img:'/img/Online-Plant-Nurseries6.jpg',
       features: ["Auth", 'Orders', 'Plant', 'Palnt', 'Seed', 'Customer', 'Comment'],
       tech: ['Java', 'MySql', 'Hibernat', 'Spring Boot', 'Data', 'JPA'],
       responsibilities:['Auth','Comment'],
