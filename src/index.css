@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --color-text-1: 255, 255, 255; 
+    --color-text-2: 153,153,153;
+    --color-text-3: 11, 7, 6;
+    --color-text-4: 29, 33, 48;
+    --color-text-5: 82, 85, 96;
+    --color-fill-1: 255,255,255;
+    --color-fill-2: 252, 237, 198;
+    --color-fill-3: 242, 201, 76;
+    --color-fill-4: 11, 7, 6;
+    --color-fill-5: 235, 240, 249;
+  }
+  .theme-light {
+    --color-text-1: 255, 255, 255;
+    --color-text-2: 153,153,153;
+    --color-text-3: 11, 7, 6;
+    --color-text-4: 29, 33, 48;
+    --color-text-5: 82, 85, 96;
+    --color-fill-1: 255,255,255;
+    --color-fill-2: 252, 237, 198;
+    --color-fill-3: 242, 201, 76;
+    --color-fill-4: 11, 7, 6;
+    --color-fill-5: 235, 240, 249;
+  }
+  .theme-dark {
+    --color-text-1: 255, 255, 255;
+    --color-text-2: 255, 255, 255;
+    --color-text-3: 255, 255, 255;
+    --color-text-4: 255, 255, 255;
+    --color-text-5: 200, 200, 200;
+    --color-fill-1: 11, 7, 6;
+    --color-fill-2: 252, 237, 198;
+    --color-fill-3: 242, 201, 76;
+    --color-fill-4: 225,225,225;
+    --color-fill-5: 30,30,30;
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
