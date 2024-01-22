@@ -121,9 +121,9 @@ export const Projects = () => {
               <p>{e.projectDetails}</p>
             </div>
             <div className="flex justify-center">
-              <div className="flex justify-between ">
+              <div className="flex justify-between flex-col md:flex-row">
                 {e.links.map((ee, ii)=>
-                <a key={ii} href={ee.url} className="px-10 py-4 rounded-xl hover: m-10 border hover:bg-skin-5/35 text-nowrap"><strong>{ee.text}</strong></a>
+                <a key={ii} href={ee.url} className="px-10 py-4 rounded-xl hover: m-5 md:m-10 border hover:bg-skin-5/35 text-nowrap text-center shadow"><strong>{ee.text}</strong></a>
                 )}
               </div>
               

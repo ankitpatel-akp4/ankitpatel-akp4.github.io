@@ -4,7 +4,6 @@ import { useContext } from "react"
 import { ThemeContext } from "../constants/store"
 export const Layout = () => {
     const {theme} = useContext(ThemeContext)
-    console.log('layout',theme)
   return (
     <div className={`theme-${theme}`}>
         <ProgressBar/>
