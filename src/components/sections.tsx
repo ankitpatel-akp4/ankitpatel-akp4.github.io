@@ -6,6 +6,31 @@ import { FaGithub } from "react-icons/fa6";
 import GitHubCalendar from 'react-github-calendar';
 
 export const Hero = () => {
+
+  const handlePdfClick = (event:any) => {
+    event.preventDefault();
+
+    const pdfUrl = "/Ankit_Patel_Resume.pdf";
+
+    // Download the PDF
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = "Ankit_Patel_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Open the PDF in a new tab
+    window.open(pdfUrl, '_blank');
+  };
+
+
+
+
+
+
+
+
   return (
     <div id="hero" className="scroll-mt-32 pb-28 bg-skin-5">
       <div className="px-5 lg:px-24 py-8 text-center  flex flex-col-reverse gap-10 lg:flex-row flex-wrap lg:flex-nowrap lg:text-left p-2">
@@ -18,7 +43,8 @@ export const Hero = () => {
             ― Alan Turing
           </p>
           <div className="flex justify-center lg:justify-start">
-            <a href="/Ankit_Patel_Resume.pdf"  download>
+
+            <a onClick={handlePdfClick} href="/Ankit_Patel_Resume.pdf">
             <button  className="px-8 py-2 bg-skin-3 rounded-xl text-skin-3 flex items-center">
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="#000" strokeWidth="2" d="M6,16 L16,16 L6,16 L6,16 Z M6,12 L18,12 L6,12 L6,12 Z M6,8 L11,8 L6,8 L6,8 Z M14,1 L14,8 L21,8 M3,23 L3,1 L15,1 L21,7 L21,23 L3,23 Z"></path></svg>  &nbsp;
               Resume</button>

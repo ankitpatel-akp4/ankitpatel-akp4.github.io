@@ -10,7 +10,25 @@ import { FaSun } from 'react-icons/fa';
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
 const Navbar = () => {
     const {theme ,setTheme }= useContext(ThemeContext)
-    const [toggle, setToggle] = useState(false)    
+    const [toggle, setToggle] = useState(false)   
+    
+    const handlePdfClick = (event:any) => {
+        event.preventDefault();
+    
+        const pdfUrl = "/Ankit_Patel_Resume.pdf";
+    
+        // Download the PDF
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = "Ankit_Patel_Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    
+        // Open the PDF in a new tab
+        window.open(pdfUrl, '_blank');
+      };
+
     return (
         <nav className="sticky top-1 bg-skin-1">
             <div className='flex relative gap-x-3 px-5 lg:px-24 p-2 justify-between bg-skin-1 items-center z-20'>
@@ -23,7 +41,7 @@ const Navbar = () => {
                     lg:flex lg:w-auto lg:flex-row lg:gap-x-10 font-bold text-skin-5`}>
                     {navLinkData.map((e,i)=>
                     e.text === 'Resume'?
-                    <a href={e.url} download>{e.text}</a>
+                    <a key={i} href={e.url} onClick={handlePdfClick}>{e.text}</a>
                     :
                     <Link
                         key={i}
@@ -105,8 +123,8 @@ const Navbar = () => {
                         <a href={e.url} 
                         
                         className='text-skin-5 cursor-pointer [&.active]:text-skin-4 hover:text-skin-4 hover:font-bold w-full text-center py-2 hover:bg-skin-5/35'
-
-                        download>{e.text}</a>
+                        onClick={handlePdfClick}
+                        >{e.text}</a>
                         :
                         <Link
                         key={i}
