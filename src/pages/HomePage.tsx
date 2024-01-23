@@ -3,7 +3,7 @@ import {About, Contact, Hero, Projects, Skills} from '../components/sections';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className=''>
       <Observer children={<Hero/>} url='/#hero'/>
       <Observer children={<About/>} url='/#about'/>
       <Observer children={<Skills/>} url='/#skills'/>

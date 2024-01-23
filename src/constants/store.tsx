@@ -71,6 +71,10 @@ export const skillsData: SkillData[] = [
         name:"JAVA"
     },
     {
+        imageUrl:"/img/python-logo.jpeg",
+        name:"Python"
+    },
+    {
         imageUrl:"https://gauravportfolio0083.netlify.app/images/aws.svg",
         name:"AWS"
     },
@@ -158,7 +162,7 @@ export const projecstData = [
           },
           {
             text:"Live Demo",
-            url: 'https://spinnyhost.com/'
+            url: 'https://spinnyhost.aryabhata.org/'
           }
         ],
         projectDetails: 'A collaborative project developed with a team of 3 within 60 days.',
